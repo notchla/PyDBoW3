@@ -34,10 +34,6 @@ results = db.query(features_list[feature_to_query])
 + install with `pip install .` 
 + currently only `*nix` is supported
 
-.. note::
-
-  You will probably need to run ``sudo make install`` for ``install/opencv/build`` to install it on your system.
-
 ## Acknowledgement
 
 This work is based on https://github.com/foxis/pyDBoW3
