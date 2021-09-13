@@ -7,46 +7,6 @@
 
 namespace py = pybind11;
 
-cv::Mat test_np_mat(const cv::Mat &in)
-{
-	std::cerr << "in: " << in << std::endl;
-	std::cerr << "sz: " << in.size() << std::endl;
-	return in.clone();
-}
-
-cv::Mat test_with_args(const cv::Mat_<float> &in, const int &var1 = 1,
-					   const double &var2 = 10.0, const std::string &name = std::string("test_name"))
-{
-	std::cerr << "in: " << in << std::endl;
-	std::cerr << "sz: " << in.size() << std::endl;
-	std::cerr << "Returning transpose" << std::endl;
-	return in.t();
-}
-
-class GenericWrapper
-{
-public:
-	GenericWrapper(const int &_var_int = 1, const float &_var_float = 1.f,
-				   const double &_var_double = 1.f, const std::string &_var_string = std::string("test_string"))
-		: var_int(_var_int), var_float(_var_float), var_double(_var_double), var_string(_var_string)
-	{
-	}
-
-	cv::Mat process(const cv::Mat &in)
-	{
-		std::cerr << "in: " << in << std::endl;
-		std::cerr << "sz: " << in.size() << std::endl;
-		std::cerr << "Returning transpose" << std::endl;
-		return in.t();
-	}
-
-private:
-	int var_int;
-	float var_float;
-	double var_double;
-	std::string var_string;
-};
-
 class Vocabulary
 {
 public:

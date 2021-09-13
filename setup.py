@@ -119,12 +119,11 @@ class CMakeBuild(build_ext):
 # logic and declaration, and simpler if you include description/version in a file.
 setup(
     name="pydbow3",
-    version="0.0.1",
+    version="1.0.0",
     author="Yang Xing Rui",
     description="python bindings for pydbow3",
     long_description="",
     ext_modules=[CMakeExtension("pydbow3")],
     cmdclass={"build_ext": CMakeBuild},
-    zip_safe=False,
-    extras_require={"test": ["pytest"]},
+    zip_safe=False
 )

@@ -1,3 +1,6 @@
+// borrowed in spirit from https://github.com/yati-sagade/opencv-ndarray-conversion
+// MIT License
+
 # ifndef __NDARRAY_CONVERTER_H__
 # define __NDARRAY_CONVERTER_H__
 
