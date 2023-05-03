@@ -1,7 +1,7 @@
 PyDBoW3
 ==============
 
-This repo is a fork of [this](https://github.com/xingruiy/PyDBoW3) adapted no opencv4 and added a cmake to find numpy
+This repo is a fork of [this](https://github.com/xingruiy/PyDBoW3) adapted to opencv4 and added a cmake to find numpy
 
 ## Get started
 
