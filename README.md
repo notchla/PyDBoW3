@@ -1,14 +1,14 @@
 PyDBoW3
 ==============
 
-This repo functions mostly the same with [this](https://github.com/foxis/pyDBoW3), but is less heavy. It does not rely on `Boost`, I have re-written most of the code to utilise the power of `pybind11`.
+This repo is a fork of [this](https://github.com/xingruiy/PyDBoW3) adapted no opencv4 and added a cmake to find numpy
 
 ## Get started
 
 ```python
 import pydbow3 as bow
 voc = bow.Vocabulary()
-voc.load("ORBvoc.txt")
+voc.load("PyDBoW3/modules/dbow3/orbvoc.dbow3")
 db = bow.Database()
 db.setVocabulary(voc)
 # extract features using OpenCV
@@ -25,12 +25,11 @@ results = db.query(features_list[feature_to_query])
 ## Prerequisites:
 * OpenCV 
 * CMake 
-* DBoW3
 
 ## Install
 
 + clone the repo with `--recursive`
-+ build and install `modules/DBoW3`
++ build and install `modules/DBoW3` using `dbow.sh`
 + install with `pip install .` 
 + currently only `*nix` is supported
 
