@@ -27,3 +27,7 @@
 *.exe
 *.out
 *.app
+
+build
+pydbow3.egg-info
+modules/dbow3/build

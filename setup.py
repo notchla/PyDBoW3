@@ -49,6 +49,7 @@ class CMakeBuild(build_ext):
                 self.distribution.get_version()),
             # not used on MSVC, but no harm
             "-DCMAKE_BUILD_TYPE={}".format(cfg),
+            "-DCMAKE_CXX_FLAGS=-std=c++11 -fpermissive",
         ]
         build_args = []
 
